@@ -266,7 +266,7 @@ class Mark:
 # A generic parameter designating an object to which a Mark may
 # be applied -- a test function (callable) or class.
 # Note: a lambda is not allowed, but this can't be represented.
-Markable = TypeVar("Markable", bound=Union[Callable[..., object], type])
+Markable = TypeVar("Markable", bound=Callable)
 
 
 @attr.s(init=False, auto_attribs=True)
